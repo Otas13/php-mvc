@@ -1,15 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300|Open+Sans:400,300italic&subset=latin,latin-ext);
 
-body
-{
-    background-color: #FFF;
-    font-family: Roboto,Trebuchet MS,Lucida Grande,
-        Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
-    color: #262626;
-    font-size: 13.6px;
-    font-weight: 300;
-}
-
 h1
 {
     font-family: Open Sans, sans-serif;
@@ -31,3 +21,9 @@ h3
     font-weight: 400;
 }
 
+.top-buffer { margin-top:20px; }
+
+.container
+{
+    font-family: 'Open Sans', sans-serif;
+}

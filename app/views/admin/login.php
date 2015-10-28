@@ -1,8 +1,15 @@
-<fieldset>
-    <legend>Admin Login</legend>
-        <form action="" method="post">
-            <p>Login: <input type="text" name="login"></p>
-            <p>Pwd: <input type="text" name="pwd"></p>
-            <p><input type="submit" value="Odeslat" name="logon"></p>
+<div class="row top-buffer">
+    <div class="col-md-4 col-md-offset-4">
+        <form action="" method="post" role="form">
+            <div class="form-group">
+                <label for="login">Admin login</label>
+                <input type="text" class="form-control" name="login">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Admin password:</label>
+                <input type="password" class="form-control" name="pwd">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Přihlásit" name="logon">
         </form>
-</fieldset>
+    </div>
+</div>

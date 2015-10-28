@@ -7,5 +7,6 @@
             echo '<script src="'.ROOT.'js/'.$js.'.css" type="text/javascript"></script>'."\n";
         }
 ?>
+</div>
 </body>
 </html>

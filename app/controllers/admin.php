@@ -32,6 +32,8 @@ class Admin extends Controller
     public function login()
     {
         $this->set_template('admin/login');
+        $this->set_default_structure();
+        $this->set_page_title('Administrace - login');
         $this->render();
 
     if(isset($_POST['logon'])){
