@@ -1,5 +1,7 @@
 <?php
 
+use core\libs\Controller;
+
 class Home extends Controller
 {
     function __construct() {

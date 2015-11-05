@@ -1,5 +1,7 @@
 <?php
 
+namespace core\helpers;
+
 class SessionManager
 {
     static function sessionStart($name, $limit = 0, $secure = null)

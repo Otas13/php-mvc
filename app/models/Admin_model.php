@@ -62,9 +62,9 @@ class Admin_model
     /*
         zpracovani dat z login formulare
     */
-    public function login_submit($_POST){
-        $login = md5(htmlentities($_POST['login']));
-        $pwd = md5(htmlentities($_POST['pwd']));
+    public function login_submit($form_data){
+        $login = md5(htmlentities($form_data['login']));
+        $pwd = md5(htmlentities($form_data['pwd']));
 
         if(($admin_data = $this->login($login, $pwd)) != false)
         {

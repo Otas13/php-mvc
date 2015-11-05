@@ -1,5 +1,7 @@
 <?php
 
+namespace core\libs;
+
 class Template
 {
     protected $variables;

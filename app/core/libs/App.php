@@ -1,5 +1,8 @@
 <?php
 
+namespace core\libs;
+use Exception;
+
 class App
 {
     protected $controller = 'home';
@@ -13,8 +16,9 @@ class App
             $this->controller = $url[0];
             unset($url[0]);
         }
+        
 
-           require_once '../app/controllers/' .$this->controller. '.php';
+        require_once '../app/controllers/' .$this->controller. '.php';
         $this->controller = new $this->controller;
 
         if(isset($url[1])){
@@ -23,6 +27,7 @@ class App
                 $this->method = $url[1];
                 unset($url[1]);
             }
+            
         }
 
         $this->params = $url ? array_values($url) : array();

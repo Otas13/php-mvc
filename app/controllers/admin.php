@@ -1,5 +1,8 @@
 <?php
 
+use core\libs\Controller;
+use models\Admin_model;
+
 class Admin extends Controller
 {
     protected $admin;

@@ -16,13 +16,19 @@ define('ENVIRONMENT', 'development');
 define('ROOT', str_replace('index.php',"",'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']));
 
 /*
+    uplny ROOT webu
+    localhost/mvc/
+*/
+define('SUPER_ROOT', str_replace('public/index.php',"",'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']));
+
+/*
     database constants
 */
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
-define('DB_NAME', 'users');
+define('DB_NAME', 'php');
 define('DB_HOST', '127.0.0.1');
-define('DB_PORT', '7188');
+define('DB_PORT', '3306');
 
 
 if (ENVIRONMENT == 'development') {
